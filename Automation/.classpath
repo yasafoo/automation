@@ -2,5 +2,44 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/cssparser-0.9.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/guava-15.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/htmlunit-2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/htmlunit-core-js-2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/httpclient-4.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/httpcore-4.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/httpmime-4.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/jcommander-1.29.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/jetty-websocket-8.1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/jna-platform-3.4.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/json-20080701.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/nekohtml-1.9.21.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/operadriver-1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/phantomjsdriver-1.1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/selenium-java-2.43.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/selenium-java-2.43.1-srcs.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/testng-6.8.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Yasafoo/git/automation/Automation/Dependencies/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
