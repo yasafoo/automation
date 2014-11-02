@@ -13,31 +13,24 @@ public class SuperAdminTest {
 	SuperAdminLogin sal;
 	SuperAdminHome sah;
 	SalesForceLogin sfl;
+	SalesForceHome sfh;
 	
 	@Before
 	public void setUp(){
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("https://test.salesforce.com/");
-		//driver.get("https://corpadmin:monpass321@tst2-super.leapset.com/login.php");
 	}
 	
 	@Test
 	public void setupAMerchant(){
 		sfl = new SalesForceLogin(driver);
-		sfl.getTxtUserName().clear();
-		sfl.getTxtUserName().sendKeys("alerts-qatwo@leapset.com.full");
-		sfl.getTxtPassword().clear();
-		sfl.getTxtPassword().sendKeys("qwertyu1");
-		sfl.getBtnLogin().click();
-		//driver.close();
+		sfl.loginToSalesForceHome("alerts-qatwo@leapset.com.full", "qwertyu1");
+		sfh = new SalesForceHome(driver);
+		sfh.clickonAccounts();
 		driver.get("https://corpadmin:monpass321@tst2-super.leapset.com/login.php");
 		sal = new SuperAdminLogin(driver);
-		sal.getTxtLogin().clear();
-		sal.getTxtLogin().sendKeys("admin");
-		sal.getTxtPassword().clear();
-		sal.getTxtPassword().sendKeys("admin");
-		sal.getBtnLogin().click();
+		sal.loginToSuperAdmin("admin", "admin");
 		sah = new SuperAdminHome(driver);
 	}
 	

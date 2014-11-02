@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SuperAdminLogin {
 	private WebDriver driver;
+	private SuperAdminHome sah;
 	
 	@FindBy(how=How.ID,using="login")
 	private WebElement txtLogin;
@@ -55,5 +56,12 @@ public class SuperAdminLogin {
 		this.btnLogin = btnLogin;
 	}
 	
-	
+	public SuperAdminHome loginToSuperAdmin(String username,String password){
+		this.getTxtLogin().clear();
+		this.getTxtLogin().sendKeys(username);
+		this.getTxtPassword().clear();
+		this.getTxtPassword().sendKeys(password);
+		this.getBtnLogin().click();
+		return sah;
+	}
 }

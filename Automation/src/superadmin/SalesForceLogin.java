@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SalesForceLogin {
 	private WebDriver driver;
+	private SalesForceHome sfh;
 	
 	@FindBy(how=How.ID,using="username")
 	private WebElement txtUserName;
@@ -47,4 +48,12 @@ public class SalesForceLogin {
 		this.btnLogin = btnLogin;
 	}
 	
+	public SalesForceHome loginToSalesForceHome(String username,String password){
+		this.getTxtUserName().clear();
+		this.getTxtUserName().sendKeys(username);
+		this.getTxtPassword().clear();
+		this.getTxtPassword().sendKeys(password);
+		this.getBtnLogin().click();
+		return sfh;
+	}
 }
