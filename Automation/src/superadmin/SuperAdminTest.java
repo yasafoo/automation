@@ -18,7 +18,7 @@ public class SuperAdminTest {
 	@Before
 	public void setUp(){
 		driver = new FirefoxDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://test.salesforce.com/");
 	}
 	
@@ -28,6 +28,9 @@ public class SuperAdminTest {
 		sfl.loginToSalesForceHome("alerts-qatwo@leapset.com.full", "qwertyu1");
 		sfh = new SalesForceHome(driver);
 		sfh.clickonAccounts();
+		sfh.clickonNewButton();
+		sfh.clickonContinueButton();
+		sfh.fillMerchantData();
 		driver.get("https://corpadmin:monpass321@tst2-super.leapset.com/login.php");
 		sal = new SuperAdminLogin(driver);
 		sal.loginToSuperAdmin("admin", "admin");
