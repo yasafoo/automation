@@ -57,6 +57,12 @@ public class SalesForceHome {
 	@FindBy(how=How.ID,using="00N70000003eb8H")
 	WebElement txtBillPhone;
 	
+	@FindBy(how=How.XPATH,using=".//*[@id='topButtonRow']/input[1]")
+	WebElement btnSave;
+	
+	@FindBy(how=How.XPATH,using=".//*[@id='00N70000003FuoC_ileinner']")
+	WebElement txtLeapsetID;
+	
 	public SalesForceHome(WebDriver driver){
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -202,10 +208,26 @@ public class SalesForceHome {
 		btnContinue.click();
 	}
 	
+	public WebElement getBtnSave() {
+		return btnSave;
+	}
+
+	public void setBtnSave(WebElement btnSave) {
+		this.btnSave = btnSave;
+	}
+
+	public WebElement getTxtLeapsetID() {
+		return txtLeapsetID;
+	}
+
+	public void setTxtLeapsetID(WebElement txtLeapsetID) {
+		this.txtLeapsetID = txtLeapsetID;
+	}
+
 	public void fillMerchantData(){
 		txtAccountName.clear();
 		txtAccountName.sendKeys(new Utilities().getMerchantName());
-		System.out.println(new Utilities().getMerchantName());
+		System.out.println("Merchant Name: "+new Utilities().getMerchantName());
 		txtCBillStreet.clear();
 		txtCBillStreet.sendKeys("101 Redwood Shores Parkway,Suite 200");
 		txtCBillCity.clear();
@@ -231,5 +253,22 @@ public class SalesForceHome {
 		txtBillCountry.sendKeys("USA");
 		txtBillPhone.clear();
 		txtBillPhone.sendKeys("6502157777");
+		
+		btnSave.click();
+	}
+	
+	public String getCRMID(WebDriver driver){
+		String url = driver.getCurrentUrl();
+		url = url.replace("https://cs1.salesforce.com/", "");
+		Utilities.CRMID = url;
+		//System.out.println("CRMID: "+Utilities.CRMID);
+		return url;
+	}
+	
+	public String getLeapsetID(){
+		String id;
+		id = getTxtLeapsetID().getText();
+		Utilities.LeapsetID = id;
+		return id;
 	}
 }

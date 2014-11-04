@@ -31,6 +31,8 @@ public class SuperAdminTest {
 		sfh.clickonNewButton();
 		sfh.clickonContinueButton();
 		sfh.fillMerchantData();
+		System.out.println("Merchant CRMID: "+sfh.getCRMID(driver));
+		System.out.println("Leapset ID: "+sfh.getLeapsetID());
 		driver.get("https://corpadmin:monpass321@tst2-super.leapset.com/login.php");
 		sal = new SuperAdminLogin(driver);
 		sal.loginToSuperAdmin("admin", "admin");

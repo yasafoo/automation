@@ -5,8 +5,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Utilities {
+	
+	public static String CRMID;
+	public static String LeapsetID;
 	public String getMerchantName(){
-		String name = "QA-Merchant-cin";
+		String name = "QAMerchant_cin";
 		Date today = new Date();
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yy");
 		String date = sdf.format(today);
